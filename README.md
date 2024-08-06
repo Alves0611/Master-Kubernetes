@@ -28,4 +28,27 @@ Quando pensamos em um ambiente de produção, é essencial levar em conta alguma
   
 - **E se houver dados sensíveis?**
   - Como garantir a segurança e conformidade dos dados?
-![alt text](./images/perguntas.png)
+![alt text](./images/questions.png)
+
+
+# Arquitetura do Kubernetes
+
+## Control Plane
+
+O Control Plane gerencia o cluster do Kubernetes. Ele é composto por vários componentes principais:
+
+- **API Server:** Expoem a API do Kubernetes. Quando interagimos com o cluster, estamos utilizando o API Server. Tudo passa por ele.
+- **etcd:** Banco de dados chave/valor, considerado o componente mais crítico do cluster, pois é a base de dados do Kubernetes.
+- **Scheduler:** Responsável por encontrar os Nodes apropriados para alocar os pods.
+- **Controller Manager:** Uma aplicação que lê as regras descritas e garante que o estado atual do cluster corresponda ao estado desejado.
+- **Cloud Controller Manager:** Interage com os provedores de cloud para gerenciar recursos como balanceadores de carga, volumes de armazenamento e nós no ambiente de cloud.
+
+## Data Plane
+
+O Data Plane executa as aplicações e é composto por vários Nodes, onde cada Node contém os seguintes componentes:
+
+- **Kubelet:** O agente que roda em cada Node do cluster. Ele garante que os containers estão rodando em um pod.
+- **Kube-proxy:** Mantém as regras de rede aplicáveis a cada Node.
+
+![alt text](./images/architecture.png)
+
