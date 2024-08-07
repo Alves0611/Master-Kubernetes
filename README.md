@@ -33,6 +33,8 @@ Quando pensamos em um ambiente de produção, é essencial levar em conta alguma
 
 # Arquitetura do Kubernetes
 
+https://kubernetes.io/docs/home/
+
 ## Control Plane
 
 O Control Plane gerencia o cluster do Kubernetes. Ele é composto por vários componentes principais:
@@ -51,4 +53,12 @@ O Data Plane executa as aplicações e é composto por vários Nodes, onde cada 
 - **Kube-proxy:** Mantém as regras de rede aplicáveis a cada Node.
 
 ![alt text](./images/architecture.png)
+
+
+## kubectl
+
+**kubectl** é uma ferramenta de linha de comando utilizada para interagir com um cluster Kubernetes.
+
+- **Interação com o API Server:** O kubectl se comunica diretamente com o API Server do cluster. Isso permite que você realize diversas operações no cluster, como criar, inspecionar, atualizar e excluir recursos do Kubernetes.
+- **Contexts:** Através dos contexts, é possível configurar e alternar entre múltiplos clusters Kubernetes. Isso facilita a administração de diferentes ambientes (por exemplo, desenvolvimento, teste e produção) a partir de um único conjunto de comandos kubectl.
 
