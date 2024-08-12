@@ -62,3 +62,8 @@ O Data Plane executa as aplicações e é composto por vários Nodes, onde cada 
 - **Interação com o API Server:** O kubectl se comunica diretamente com o API Server do cluster. Isso permite que você realize diversas operações no cluster, como criar, inspecionar, atualizar e excluir recursos do Kubernetes.
 - **Contexts:** Através dos contexts, é possível configurar e alternar entre múltiplos clusters Kubernetes. Isso facilita a administração de diferentes ambientes (por exemplo, desenvolvimento, teste e produção) a partir de um único conjunto de comandos kubectl.
 
+
+
+
+https://krew.sigs.k8s.io/docs/user-guide/setup/install/
+https://github.com/itaysk/kubectl-neat
