@@ -11,3 +11,12 @@ No Kubernetes, um namespace é uma forma de dividir recursos em um cluster de fo
 3. **Facilidade de Gerenciamento**: Organizar recursos em namespaces facilita o gerenciamento, especialmente em ambientes com muitas aplicações ou equipes diferentes trabalhando no mesmo cluster.
 
 4. **Separação de Ambientes**: Você pode usar namespaces para separar diferentes ambientes, como desenvolvimento, teste e produção, dentro do mesmo cluster.
+
+
+## Exemplo Prático
+
+Um exemplo prático seria ter um namespace chamado `dev` para recursos de desenvolvimento e outro chamado `prod` para recursos de produção. Isso ajuda a garantir que as aplicações em desenvolvimento não interfiram nas aplicações em produção. (geralmente as empresas tem um cluster voltado para o ambiente de desenvolvimento)
+
+Namespaces são úteis para manter a organização e a segurança em clusters Kubernetes, especialmente à medida que eles crescem em tamanho e complexidade.
+
+![alt text](../images/namespace.png)
