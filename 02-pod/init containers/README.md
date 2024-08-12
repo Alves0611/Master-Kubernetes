@@ -10,3 +10,10 @@
 
 - **Isolamento:** Init containers têm suas próprias imagens e podem usar ferramentas ou utilitários diferentes dos contêineres principais.
 
+## Exemplos de Uso
+
+- **Esperar por Serviços Externos:** Verificar se um serviço externo (como um banco de dados) está disponível antes de iniciar a aplicação principal.
+  
+- **Configuração Inicial:** Configurar arquivos de configuração ou baixar dependências que a aplicação principal precisa.
+
+- **Checagem de Pré-requisitos:** Garantir que certas condições sejam atendidas antes de iniciar os contêineres principais, como verificar se um volume de armazenamento está montado corretamente.
