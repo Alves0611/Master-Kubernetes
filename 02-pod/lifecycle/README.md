@@ -31,3 +31,10 @@ O ciclo de vida de um Pod no Kubernetes descreve as fases pelas quais um Pod pod
 ### 7. Terminating (Terminando)
 - **Descrição:** Quando um Pod é marcado para exclusão, ele entra em um estado de terminação, onde Kubernetes aguarda os contêineres finalizarem graciosamente antes de forçar o encerramento.
 - **Prazo:** O tempo padrão para essa finalização é 30 segundos, mas isso pode ser ajustado conforme a necessidade.
+
+## Considerações Adicionais
+- **Liveness e Readiness Probes:** Kubernetes usa essas sondagens para verificar se o contêiner está saudável e pronto para receber tráfego. Se uma liveness probe falhar, o contêiner será reiniciado, impactando o estado do Pod.
+  
+- **Pod Disruption Budgets:** Permitem que você especifique quantos Pods devem estar disponíveis durante operações de manutenção, como atualizações de nós, evitando interrupções em serviços.
+
+O gerenciamento adequado dessas fases permite que você crie sistemas resilientes e capazes de se auto-recuperar no Kubernetes.
