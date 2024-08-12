@@ -13,3 +13,8 @@ Um **Pod** é a menor unidade de execução em um cluster Kubernetes. Aqui está
   
 - **Ambiente Compartilhado:** Todos os contêineres dentro de um Pod compartilham o mesmo endereço IP, espaço de armazenamento (volumes) e namespace de rede. Isso significa que eles podem se comunicar entre si usando localhost.
 
+## Funções dos Pods
+
+- **Execução de Aplicativos:** Os Pods são usados para executar uma instância de uma aplicação em um cluster Kubernetes. Cada Pod é uma unidade de replicação e escala da aplicação.
+
+- **Isolamento:** Embora os contêineres dentro de um Pod compartilhem recursos, cada Pod é isolado de outros Pods, garantindo que os recursos (CPU, memória, rede) não sejam compartilhados entre eles.
