@@ -9,3 +9,20 @@ Um **Multi-Container Pod** no Kubernetes é um Pod que contém mais de um contê
 - **Cooperação Estrita:** Multi-container Pods são usados quando os contêineres precisam cooperar estreitamente para fornecer uma funcionalidade completa. Eles são executados no mesmo nó e compartilham recursos como CPU e memória.
 
 - **Design Patterns:** Existem vários padrões de design para multi-container Pods, incluindo Sidecar, Ambassador e Adapter, cada um com seu propósito específico.
+
+## Padrões Comuns de Design
+
+### Sidecar Pattern
+
+- **Função:** Um contêiner auxiliar que complementa e melhora o contêiner principal.
+- **Exemplo:** Um contêiner de log que coleta e processa logs gerados pelo contêiner principal.
+
+### Ambassador Pattern
+
+- **Função:** Um contêiner que ajuda o contêiner principal a se comunicar com o mundo externo.
+- **Exemplo:** Um contêiner proxy que lida com o tráfego de entrada e saída para o contêiner principal.
+
+### Adapter Pattern
+
+- **Função:** Um contêiner que transforma a saída de um contêiner principal em um formato adequado para consumo por outros serviços.
+- **Exemplo:** Um contêiner que converte logs em um formato específico antes de enviá-los para um sistema de monitoramento.
