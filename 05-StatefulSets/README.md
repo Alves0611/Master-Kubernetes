@@ -38,3 +38,16 @@ StatefulSets são ideais para aplicativos que exigem:
 ## Conclusão
 
 StatefulSets são uma ferramenta essencial no Kubernetes para gerenciar aplicações que precisam de identidades persistentes e armazenamento durável. Eles garantem que os pods tenham nomes, endereços de rede e volumes estáveis, o que é crucial para muitas aplicações stateful, como bancos de dados e sistemas distribuídos.
+
+
+# Stateful vs Stateless
+
+## Stateful (Com Estado)
+Um sistema ou aplicativo stateful mantém informações sobre o estado de uma sessão ou interação ao longo do tempo. Isso significa que cada solicitação de um cliente é dependente das solicitações anteriores, e o servidor deve lembrar o estado da sessão. Um exemplo comum é um banco de dados que mantém informações sobre transações em andamento ou uma aplicação que mantém sessões de usuário.
+
+## Stateless (Sem Estado)
+Em um sistema ou aplicativo stateless, cada solicitação do cliente é independente das outras. O servidor não mantém nenhuma informação sobre o estado entre as solicitações. Cada solicitação é tratada de forma isolada, e todas as informações necessárias devem ser enviadas pelo cliente a cada solicitação. Exemplos incluem APIs RESTful, onde cada requisição é autocontida e não depende de nenhuma requisição anterior.
+
+## Resumo
+- **Stateful:** O estado é mantido entre as interações.
+- **Stateless:** Não há armazenamento de estado entre as interações; cada solicitação é tratada de forma independente.
