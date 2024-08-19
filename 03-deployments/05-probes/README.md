@@ -15,3 +15,18 @@ A **readiness probe** verifica se um container está pronto para receber tráfeg
 
 ### 3. Startup Probe
 A **startup probe** é usada para verificar se um container conseguiu iniciar corretamente. Esse tipo de probe é especialmente útil para containers que possuem um tempo de inicialização mais longo, evitando que liveness probes normais falhem antes que o container esteja completamente pronto. A startup probe informa ao Kubernetes que o container ainda está em processo de inicialização e não deve ser reiniciado prematuramente.
+
+
+## Métodos de Verificação
+
+Os probes no Kubernetes podem ser configurados com base em diferentes métodos de verificação, como:
+
+- **HTTP GET**: Realiza uma requisição HTTP a um endpoint específico.
+- **TCP Socket**: Verifica se uma porta TCP está aberta.
+- **Exec Command**: Executa um comando dentro do container e verifica o código de saída.
+
+## Importância dos Probes
+
+Os probes são cruciais para a automação da gestão da saúde dos containers no Kubernetes. Eles ajudam a garantir que as aplicações continuem funcionando corretamente, mesmo em caso de falhas ou lentidões temporárias. Isso permite que o Kubernetes mantenha o estado desejado das aplicações, reiniciando ou removendo containers problemáticos conforme necessário, contribuindo para a alta disponibilidade e resiliência das aplicações no cluster.
+
+![alt text](../../images/readiness&liveness.png)
