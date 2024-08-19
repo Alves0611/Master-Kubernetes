@@ -1,0 +1,1 @@
+base application: https://github.com/valentinomiazzo/docker-jvm-memory-test
