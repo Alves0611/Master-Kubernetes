@@ -20,3 +20,21 @@
    - StatefulSets garantem que a atualização dos pods ocorra de maneira controlada, um por vez, na ordem correta, garantindo que a aplicação mantenha sua integridade durante o processo de atualização.
 
 
+
+## Quando Usar StatefulSets?
+
+StatefulSets são ideais para aplicativos que exigem:
+
+- **Identidade de Rede Estável:** Aplicações que precisam de um hostname consistente (como sistemas distribuídos que se comunicam entre si).
+- **Armazenamento Persistente:** Bancos de dados ou outros sistemas que necessitam de acesso a volumes de armazenamento persistentes.
+- **Ordenação:** Aplicações que precisam ser iniciadas ou encerradas em uma ordem específica.
+
+## Exemplo de Aplicações que Usam StatefulSets
+
+- **Bancos de Dados Distribuídos:** Como MongoDB, Cassandra, ou MySQL clusters.
+- **Sistemas de Mensageria:** Como Kafka e RabbitMQ.
+- **Sistemas Distribuídos:** Como Zookeeper e Etcd, que requerem identidades e ordenação para operações corretas.
+
+## Conclusão
+
+StatefulSets são uma ferramenta essencial no Kubernetes para gerenciar aplicações que precisam de identidades persistentes e armazenamento durável. Eles garantem que os pods tenham nomes, endereços de rede e volumes estáveis, o que é crucial para muitas aplicações stateful, como bancos de dados e sistemas distribuídos.
