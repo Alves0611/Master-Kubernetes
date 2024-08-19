@@ -67,3 +67,4 @@ O Data Plane executa as aplicações e é composto por vários Nodes, onde cada 
 
 https://krew.sigs.k8s.io/docs/user-guide/setup/install/
 https://github.com/itaysk/kubectl-neat
+https://12factor.net/pt_br/
